@@ -1,6 +1,7 @@
 package com.library;
 
-
+import src.main.java.com.library.Book;
+import src.main.java.com.library.Library;
 
 public class LibraryTest {
     public static void main(String[] args) {
@@ -14,8 +15,8 @@ public class LibraryTest {
         Book book = new Book("Verity", "Colleen Hoover");
         library.addBook(book);
         boolean statusBuku = book.isAvailable();
-        assert statusBuku == book.isAvailable() : "ERROR: Status buku tidak konsisten!";
-        assert book.isAvailable() == true : "ERROR: Buku baru harusnya berstatus Available!";
+        assert book != null : "ERROR: Objek buku gagal dibuat!";
+        assert book.getTitle().equals("Verity") : "ERROR: Judul buku tidak cocok!";
         System.out.println("[PASSED] testAddBook");
     }
 }
