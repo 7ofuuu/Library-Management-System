@@ -33,11 +33,11 @@
                 </executions>
                 <configuration>
                     <mainClass>com.library.LibraryTest</mainClass>
-                    
+                    <includePluginDependencies>true</includePluginDependencies>
                     <commandlineArgs>-ea</commandlineArgs>
                     
                 </configuration>
             </plugin>
         </plugins>
     </build>
-</project>
+</project> 
