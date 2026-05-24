@@ -24,7 +24,7 @@ jobs:
         distribution: 'temurin'
         cache: 'maven'
     - name: Run Build and Logic Tests with Maven
-      run: mvn clean test
+      run: mvn clean test test-compile
     - name: Run Snyk Security Scan
       if: matrix.java-version == '17' && matrix.os == 'ubuntu-latest'
       uses: snyk/actions/maven@master
