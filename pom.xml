@@ -48,7 +48,7 @@
                     <mainClass>com.library.LibraryTest</mainClass>
                     <includePluginDependencies>true</includePluginDependencies>
                     <commandlineArgs>-ea</commandlineArgs>
-                    
+                    <classpathScope>test</classpathScope>
                 </configuration>
             </plugin>
         </plugins>
