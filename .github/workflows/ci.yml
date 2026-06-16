@@ -29,10 +29,10 @@ jobs:
       run: mvn clean test-compile
 
     - name: Run Snyk Security Scan
-      if: matrix.java-version == '17' && matrix.os == 'ubuntu-latest'
+      if: matrix.os == 'ubuntu-latest'
       uses: snyk/actions/maven@master
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        JAVA_HOME: /usr/lib/jvm/temurin-17-jdk-amd64
+        JAVA_HOME: /opt/java/openjdk
       with:
         args: --severity-threshold=high
