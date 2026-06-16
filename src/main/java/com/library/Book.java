@@ -1,6 +1,6 @@
 package com.library;
 
-public class Book{
+public class Book {
 
     // Private member variables to store the book's title, author, and borrowed status.
     private String title;
@@ -8,7 +8,7 @@ public class Book{
     private boolean isBorrowed;
 
     // Constructor to initialize
-    public Book(String title, String author){
+    public Book(String title, String author) {
         this.title = title;
         this.author = author;
         this.isBorrowed = false;
@@ -17,10 +17,10 @@ public class Book{
     // Method to borrow a book.
     public void borrowBook() {
         // To check if the book is not already borrowed.
-        if(!isBorrowed){
+        if (!isBorrowed) {
             isBorrowed = true;
             System.out.println("Book is successfully borrowed: " + title);
-        } else{
+        } else {
             System.out.println("Sorry, this book is already borrowed");
         }
     }
@@ -28,39 +28,37 @@ public class Book{
     // Method to return a book.
     public void returnBook() {
         // To check if the book is already borrowed.
-        if(isBorrowed){
+        if (isBorrowed) {
             isBorrowed = false;
             System.out.println("You've successfully returned the book: " + title);
         } else {
             // If the book wasn't borrowed, display a message.
             System.out.println("This book wasn't borrowed");
         }
-        }
+    }
 
-        // Method to check if the book is available (not borrowed).
-        public boolean isAvailable() { 
-            return !isBorrowed;
-        }   
-        // Getter method to retrieve to book's title.
-        public String getTitle(){
-            return title;
-        } 
-        // Getter method to retrieve the book's author.
-        public String getAuthor(){
-            return author;
-        }
-        // Getter method to check if the book is borrowed.
-        public boolean isBorrowed(){
-            return isBorrowed;
-        }
-        //Method to diaplay the book's details.
+    // Method to check if the book is available (not borrowed).
+    public boolean isAvailable() {
+        return !isBorrowed;
+    }
+
+    // Getter method to retrieve the book's title.
+    public String getTitle() {
+        return title;
+    }
+
+    // Getter method to retrieve the book's author.
+    public String getAuthor() {
+        return author;
+    }
+
+    // Getter method to check if the book is borrowed.
+    public boolean isBorrowed() {
+        return isBorrowed;
+    }
+
+    // Method to display the book's details.
     public void displayDetails() {
         System.out.println("Title: " + title + ", Author: " + author);
     }
-    }
-    
-
-
-
-   
-    
+}

@@ -1,7 +1,4 @@
-
-
-import com.library.Book;
-import com.library.Library;
+package com.library;
 
 public class LibraryTest {
     public static void main(String[] args) {
