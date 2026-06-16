@@ -1,6 +1,6 @@
 # Library Management System 📚
 
-A simple Library Management System developed in Java, allowing users to borrow and return books with ease. The system enables users to interact with a collection of books and view available books, borrow books, and return them. 📖💡
+A simple Library Management System developed in Java, allowing users to borrow and return books with ease. The system enables users to interact with a collection of books and view available books, borrow books, and return them. 📖
 
 ## Features ✨
 
@@ -74,3 +74,6 @@ Grit by Angela Duckworth
 - Implement search functionality to search for books by title or author 🔍.
 - Add a due date feature for borrowed books 📅.
 - Implement user authentication to maintain a history of borrowed books for each user 🧑‍💻.
+
+
+testing workflow
